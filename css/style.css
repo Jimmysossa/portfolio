@@ -262,8 +262,27 @@ button {
         grid-column: 2;
         grid-row: 1 /span2;
     }
-    .skills article {
+    .skills #c20 {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+    .education {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .education #c30 {
         grid-column: 1;
         grid-row: 2;
+    }
+    .education #c31 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .archievements {
+        grid-template-columns: repeat(2,1fr);
+        /* grid-template-rows: repeat(2,1fr); */
+    }
+    .archievements h2 {
+        text-align: start;
     }
 }
