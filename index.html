@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icons -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- owner proyect -->
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" media="all" href="./css/style.css"> 
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">   
+    <title>Portfolio</title>
+</head>
+<body class="dark">
+  <header class="header">
+    <iframe src="./particles.html" frameborder="0">
+    </iframe>
+      <nav class="header_nav">
+        <div class="nav_start">
+          <a class="icon icon_home" href="#">
+            <lord-icon
+              src="https://cdn.lordicon.com/epietrpn.json"
+              trigger="hover"
+              stroke="bold"
+              colors="primary:#121331,secondary:#4bb3fd,tertiary:#c74b16,quaternary:#f24c00,quinary:#3a3347,senary:#646e78,septenary:#ebe6ef"
+              style="width:20px;height:20px">
+            </lord-icon>            
+          </a>
+          </div>
+          <div class="nav_center">
+          <a class="icon icon_about" href="#1">
+            <lord-icon
+            src="https://cdn.lordicon.com/mebvgwrs.json"
+            trigger="hover"
+            stroke="bold"
+            style="width:20px;height:20px">
+            </lord-icon>
+          </a>
+          <a class="icon icon_skills" href="#2">
+            <lord-icon
+              src="https://cdn.lordicon.com/cqjywglg.json"
+              trigger="hover"
+              style="width:20px;height:20px">
+            </lord-icon>           
+          </a>
+          <a class="icon icon_projects" href="#3">
+            <lord-icon
+              src="https://cdn.lordicon.com/wyjhrzdh.json"
+              trigger="hover"
+              stroke="bold"
+              state="hover-pinch"
+              style="width:20px;height:20px">
+            </lord-icon>           
+          </a>
+          <a class="icon icon_educations" href="#4">
+            <lord-icon
+              src="https://cdn.lordicon.com/lqbssemm.json"
+              trigger="hover"
+              stroke="bold"
+              style="width:20px;height:20px">
+            </lord-icon>            
+          </a>
+          <a class="icon icon_archievements" href="#5">
+            <lord-icon
+              src="https://cdn.lordicon.com/jdngjjzg.json"
+              trigger="hover"
+              stroke="bold"
+              style="width:20px;height:20px">
+            </lord-icon>            
+          </a>
+          <a class="icon icon_cv" href="./cv/CVesp.pdf" download="">
+            <lord-icon
+              src="https://cdn.lordicon.com/ujxzdfjx.json"
+              trigger="hover"
+              stroke="bold"
+              style="width:20px;height:20px">
+            </lord-icon>            
+          </a>
+        </div>
+        <div class="nav_end">
+          <a class="icon icon_languaje" href="#">
+            <!-- <img src="./iconos/esp.png" alt=""> -->
+            <img src="./iconos/eng.png" alt="">
+          </a>
+          <a class="icon icon_volume">
+            <!-- <ion-icon name="volume-high-sharp"></ion-icon> -->
+            <ion-icon name="volume-mute-sharp"></ion-icon>
+            <audio loop src="./sonido.mp3"></audio>            
+          </a>
+          <a class="icon icon_mode" href="#">
+            <!-- <ion-icon name="moon-sharp"></ion-icon> -->
+            <ion-icon name="sunny-sharp"></ion-icon>          
+          </a>
+        </div>
+      </nav>
+  </header>
+  <main class="main">
+    <section class="section front">
+        <h1>Programador fronted</h1>
+        <h2>Jimmy Sossa Diaz</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</p>
+        <figure>
+          <img src="./imagenes/photo.jpg" alt="photo">
+        </figure>
+    </section>
+    <section class="section about" id="1">
+      <h2>Sobre mi</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi aperiam quas blanditiis minima atque impedit voluptas iusto voluptates officiis.</p>
+      <h3>Aficiones</h3>
+      <ul>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+        <li>Lorem, ipsum.</li>
+      </ul>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31832.141448690676!2d-69.93228251260805!3d-4.216807936864391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1701485627231!5m2!1ses-419!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section class="section skills" id="2">
+          <h2>Habilidades:</h2>
+          <article>
+            <h3>Blandas</h3>
+            <ul>
+            <li>Servicio al cliente</li>
+            <li>Solucion de problemas e incovenientes de computo y digitales</li>
+            <li>Capacidad de adaptacion e interes en el aprendizaje continuo en tecnologia de software</li>
+            </ul>
+          </article>
+          <article class="hard_skills">
+        <h3>Duras:</h3>
+        <figure class="slider_skills">
+          <img src="./imagenes/css3.png" alt="hard skill">
+          <img src="./imagenes/html5.png" alt="hard skill">
+          <img src="./imagenes/JavaScript.png" alt="hard skill">
+          <img src="./imagenes/nodejs.png" alt="hard skill">
+          <img src="./imagenes/react.png" alt="hard skill">
+        </figure>
+        <div>
+          <button class="btn_prev"><</button>
+          <button class="btn_next">></button>
+        </div>
+        </article>
+        
+            <!-- javascript  node.js-->
+    </section>
+    <section class="section project" id="3">
+        <h3>Proyectos:</h3> 
+        <!-- slider con api -->
+    
+    </section>
+    <section class="section education" id="4">   
+            <h2>Educación:</h2>
+            <article class="local_education">
+            <h3>Academlo:</h3>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </article>
+          
+          <article class="foreign_education">
+            <h3>Otros:</h3>
+            <li>Lorem ipsum dolor sit.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem ipsum dolor sit amet consectetur.</li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </article>
+    </section>
+    <section class="section archievements" id="5">
+      <h2>Logros</h2>
+      <figure>
+        <img src="./imagenes/aplausos.gif" alt="animated gif">
+      </figure>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, aperiam! Earum suscipit magni perspiciatis itaque nesciunt sint eveniet assumenda! Cupiditate excepturi, dolorum accusamus voluptate explicabo eum nesciunt molestiae alias voluptas facilis corrupti quos, exercitationem architecto blanditiis maiores nisi ducimus odit? Voluptatem quisquam nostrum iure ratione ullam porro sit consectetur dolores!</p>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
