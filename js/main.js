@@ -87,7 +87,7 @@ async function getApi() {
     }
 }
 function printProjects (projects) {
-    const item = document.querySelectorAll('.splide__slide');
+    const list = document.querySelectorAll('.splide__slide');
     projects.forEach((project, i) => {
         const { descripcion, image, tecnologias, titulo, technologies, title} = projects;
         const html = `
@@ -112,11 +112,11 @@ function slider () {
 }
 async function main () {
     const projects = await getApi();
-    printProjects (projects)
     skills();
     mode();
     sound();
     getApi();
     slider();
+    printProjects (projects)
 }
 main();
