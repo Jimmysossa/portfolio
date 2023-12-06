@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after{
-    margin: o;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -133,7 +133,7 @@ button {
     width: 80%;
 }
 .splide__slide div figure{
-    border-radius: 20px;
+    border-radius: 40px;
     overflow: hidden;
     display:flex;
     justify-content: center;
@@ -152,6 +152,7 @@ button {
     bottom: 0;
     right: 0;
     z-index: 30;
+    height: 20px;
 }
 .footer .icon {
     font-size: 35px;
@@ -328,7 +329,7 @@ button {
         grid-template-rows: 1fr 5fr;
     }
     .splide__slide {
-        display: row;
+        display: flex;
         flex-direction: row;
         gap: 10px;
     }
