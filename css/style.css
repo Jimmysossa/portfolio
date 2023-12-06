@@ -112,9 +112,9 @@ button {
 .btn_next {
     right: 1%;
 }
-/* estilo para slpide */
+/* estilo para splide */
 .splide {
-    padding: 50px;
+    padding: 25px;
 }
 .splide__slide {
     display: flex;
