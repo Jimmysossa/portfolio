@@ -116,6 +116,25 @@ button {
 .splide {
     padding: 50px;
 }
+.splide__slide {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+}
+.splide__slide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.splide__slide div > * {
+    text-align: center;
+    width: 80%;
+}
+.splide__slide div figure{
+    border-radius: 20px;
+    overflow: hidden;
+}
 /* fin */
 .education {
     justify-content: space-evenly;
@@ -296,5 +315,13 @@ button {
     }
     .archievements h2 {
         text-align: start;
+        grid-column: span 2;
+    }
+    .archievements p {
+        align-self: center;
+    }
+    .archievements figure {
+        height: 50%;
+        align-self: center;
     }
 }
