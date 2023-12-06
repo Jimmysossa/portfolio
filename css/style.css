@@ -145,6 +145,27 @@ button {
 .archievements figure {
     height: 50%;
 }
+.footer {
+    width: 80px;
+    margin: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 30;
+}
+.footer .icon {
+    font-size: 35px;
+    width: 35px;
+    position: absolute;
+}
+.icon_link {
+    top: 0;
+    right: 0;
+}
+.icon_git {
+    bottom: 0;
+    left: 0;
+}
 @media (min-width: 400px) {
     a {
         font-size: 25px;
@@ -224,6 +245,12 @@ button {
     }
     .icon_mode:hover::after{
         content: 'Activa/Desactiva el modo oscuro';
+    }
+    .icon_link:hover::after{
+        content: 'linkedin';
+    }
+    .icon_git:hover::after{
+        content: 'Github';
     }
     /* fin de los estilos para toolstips*/
     .section {
