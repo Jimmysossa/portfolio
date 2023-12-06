@@ -120,6 +120,7 @@ button {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
+    align-items: center;
 }
 .splide__slide div {
     display: flex;
@@ -134,6 +135,8 @@ button {
 .splide__slide div figure{
     border-radius: 20px;
     overflow: hidden;
+    display:flex;
+    justify-content: center;
 }
 /* fin */
 .education {
@@ -296,6 +299,11 @@ button {
     .project {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 5fr;
+    }
+    .splide__slide {
+        display: row;
+        flex-direction: row;
+        gap: 10px;
     }
     .education {
         grid-template-columns: repeat(2,1fr);
