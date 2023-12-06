@@ -116,7 +116,7 @@ async function main () {
     mode();
     sound();
     getApi();
-    slider();
     printProjects (projects)
+    slider();
 }
 main();
