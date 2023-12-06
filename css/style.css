@@ -10,7 +10,7 @@
     --var--colorsecundary: lightgreen;
 }
 body{
-    max-width: 1200px;
+    max-width: 1800px;
     margin: 0 auto;
 }
 body.dark {
@@ -112,8 +112,16 @@ button {
 .btn_next {
     right: 1%;
 }
+/* estilo para slpide */
+.splide {
+    padding: 50px;
+}
+/* fin */
 .education {
     justify-content: space-evenly;
+}
+.archievements figure {
+    height: 50%;
 }
 @media (min-width: 400px) {
     a {
@@ -265,6 +273,10 @@ button {
     .skills #c20 {
         grid-column: 2;
         grid-row: 1 / span 2;
+    }
+    .project {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr;
     }
     .education {
         grid-template-columns: repeat(2,1fr);

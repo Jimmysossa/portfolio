@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slider api -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css" rel="stylesheet">
     <!-- icons -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -10,7 +14,7 @@
     <!-- owner proyect -->
     <script src="./js/main.js" defer></script>
     <link rel="stylesheet" media="all" href="./css/style.css"> 
-    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">   
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon"> 
     <title>Portfolio</title>
 </head>
 <body class="dark">
@@ -80,7 +84,7 @@
           </a>
         </div>
         <div class="nav_end">
-          <a class="icon icon_languaje" href="#">
+          <a class="icon icon_languaje" href="./english.html">
             <!-- <img src="./iconos/esp.png" alt=""> -->
             <img src="./iconos/eng.png" alt="">
           </a>
@@ -142,13 +146,18 @@
           <button class="btn_next">></button>
         </div>
         </article>
-        
-            <!-- javascript  node.js-->
     </section>
     <section class="section project" id="3">
         <h3>Proyectos:</h3> 
-        <!-- slider con api -->
-    
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">Slide 01</li>
+              <li class="splide__slide">Slide 02</li>
+              <li class="splide__slide">Slide 03</li>
+            </ul>
+          </div>
+        </section>
     </section>
     <section class="section education" id="4">   
             <h2>Educación:</h2>

@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- slider api -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css" rel="stylesheet">
     <!-- icons -->
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -10,7 +14,7 @@
     <!-- owner proyect -->
     <script src="./js/main.js" defer></script>
     <link rel="stylesheet" media="all" href="./css/style.css"> 
-    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon">   
+    <link rel="shortcut icon" href="./imagenes/logo.png" type="image/x-icon"> 
     <title>Portfolio</title>
 </head>
 <body class="dark">
@@ -38,14 +42,14 @@
             style="width:20px;height:20px">
             </lord-icon>
           </a>
-          <a class="icon icon_home" href="#2">
+          <a class="icon icon_skills" href="#2">
             <lord-icon
               src="https://cdn.lordicon.com/cqjywglg.json"
               trigger="hover"
               style="width:20px;height:20px">
             </lord-icon>           
           </a>
-          <a class="icon icon_skills" href="#3">
+          <a class="icon icon_projects" href="#3">
             <lord-icon
               src="https://cdn.lordicon.com/wyjhrzdh.json"
               trigger="hover"
@@ -80,7 +84,7 @@
           </a>
         </div>
         <div class="nav_end">
-          <a class="icon icon_languaje" href="#">
+          <a class="icon icon_languaje" href="./english.html">
             <!-- <img src="./iconos/esp.png" alt=""> -->
             <img src="./iconos/eng.png" alt="">
           </a>
@@ -98,14 +102,12 @@
   </header>
   <main class="main">
     <section class="section front">
-        <h1>Programador fronted</h1>
-        <div>
-            <h3>Jimmy Sossa Diaz</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</p>
-        </div>
-        <div>
-            <!-- fotografia -->
-        </div>
+        <h1>Programador frontend</h1>
+        <h2>Jimmy Sossa Diaz</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae!</p>
+        <figure>
+          <img src="./imagenes/photo.jpg" alt="photo">
+        </figure>
     </section>
     <section class="section about" id="1">
       <h2>Sobre mi</h2>
@@ -130,7 +132,7 @@
             <li>Capacidad de adaptacion e interes en el aprendizaje continuo en tecnologia de software</li>
             </ul>
           </article>
-          <article class="hard_skills">
+          <article class="hard_skills" id="c20">
         <h3>Duras:</h3>
         <figure class="slider_skills">
           <img src="./imagenes/css3.png" alt="hard skill">
@@ -144,17 +146,22 @@
           <button class="btn_next">></button>
         </div>
         </article>
-        
-            <!-- javascript  node.js-->
     </section>
     <section class="section project" id="3">
         <h3>Proyectos:</h3> 
-        <!-- slider con api -->
-    
+        <section class="splide" aria-label="Splide Basic HTML Example">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">Slide 01</li>
+              <li class="splide__slide">Slide 02</li>
+              <li class="splide__slide">Slide 03</li>
+            </ul>
+          </div>
+        </section>
     </section>
     <section class="section education" id="4">   
             <h2>Educación:</h2>
-            <article class="local_education">
+            <article class="local_education" id="c30">
             <h3>Academlo:</h3>
             <li>Lorem ipsum dolor sit.</li>
             <li>Lorem, ipsum dolor.</li>
@@ -162,7 +169,7 @@
             <li>Lorem ipsum dolor sit amet.</li>
           </article>
           
-          <article class="foreign_education">
+          <article class="foreign_education" id="c31">
             <h3>Otros:</h3>
             <li>Lorem ipsum dolor sit.</li>
             <li>Lorem, ipsum dolor.</li>

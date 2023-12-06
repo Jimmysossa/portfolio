@@ -76,9 +76,47 @@ function sound() {
         }
     })
 }
-function main () {
+async function getApi() {
+    const url = 'https://fundametos-api-porfolios-dev-exsn.2.ie-1.fl0.io/api/v1/projects';
+    try {
+        const data = await fetch(url);
+        const res = await data.json ();
+        return res;
+    } catch (error) {
+        console.log(error);
+    }
+}
+function printProjects (projects) {
+    const item = document.querySelectorAll('.splide__slide');
+    projects.forEach((project, i) => {
+        const { descripcion, image, tecnologias, titulo, technologies, title} = projects;
+        const html = `
+            <div>
+                <h3>${titulo}</h3>
+                <p>${descripcion}</p>
+                <p>${tecnologias}</p>
+            </div>
+                <figure>
+                    <img src="${image}" alt="slider item">
+                </figure>
+        `;
+        list[i].innerHTML = html;
+    });
+}
+function slider () {
+    const splide = new Splide( '.splide',{
+        type   : 'loop',
+        perPage: 1,
+      } );
+    splide.mount();
+}
+async function main () {
+    const projects = await getApi();
+    printProjects (projects)
     skills();
     mode();
     sound();
+    getApi();
+    slider();
 }
 main();
