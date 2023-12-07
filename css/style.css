@@ -204,12 +204,12 @@ button {
         background-color: var(--var--colorhead);
         content: '';
         position: absolute;
-
         font-size: 16px;
         width: max-content;
         border: 1px solid;
         padding: 5px 10px;
         border-radius: 5px;
+        background-color: azure;
     }
     .header_nav  a:hover::after {
     top: 0;
