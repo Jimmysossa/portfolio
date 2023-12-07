@@ -132,8 +132,8 @@ button {
     text-align: center;
     width: 80%;
 }
-.splide__slide div figure{
-    border-radius: 80px;
+.splide__slide figure{
+    border-radius: 20px;
     overflow: hidden;
     display:flex;
     justify-content: center;
@@ -153,19 +153,28 @@ button {
     right: 0;
     z-index: 30;
     height: 80px;
+    aspect-ratio: 1;
 }
 .footer .icon {
     font-size: 35px;
     width: 35px;
     position: absolute;
 }
-.icon_link {
+.active .icon_link {
     top: 0;
     right: 0;
 }
-.icon_git {
+.active .icon_git {
     bottom: 0;
     left: 0;
+}
+.icon_link {
+    right: -100%;
+    transition: right .5s;
+}
+.icon_git {
+    bottom: -100%;
+    transition: bottom .5s;;
 }
 @media (min-width: 400px) {
     a {
@@ -202,6 +211,10 @@ button {
         border: 1px solid;
         padding: 5px 10px;
         border-radius: 5px;
+    }
+    .header_nav a:hover::after{
+        top: 0;
+        left: 40px;
     }
     .dark a:hover::after{
         background-color: var(--var--colorhead);
@@ -248,10 +261,14 @@ button {
         content: 'Activa/Desactiva el modo oscuro';
     }
     .icon_link:hover::after{
-        content: 'linkedin';
+        top: 0;
+        top: 40px;
+        content: 'contactame';
     }
     .icon_git:hover::after{
-        content: 'Github';
+        top: 0;
+        right: 40px;
+        content: 'Mira mi firma de programar';
     }
     /* fin de los estilos para toolstips*/
     .section {

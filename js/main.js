@@ -76,11 +76,26 @@ function sound() {
         }
     })
 }
+function social() {
+    const nav =document.querySelector('.header_nav')
+    const footer = document.querySelector('.footer')
+    footer.classList.toggle('active');
+    setTimeout(() => {
+        footer.classList.toggle('active');
+    },2000);
+    nav.addEventListener('click', ()=> {
+        footer.classList.toggle('active');
+    setTimeout(() => {
+        footer.classList.toggle('active');
+    },2000);
+    })
+}
 async function getApi() {
     const url = 'https://fundametos-api-porfolios-dev-exsn.2.ie-1.fl0.io/api/v1/projects';
     try {
         const data = await fetch(url);
         const res = await data.json ();
+        localStorage.setItem('projects', JSON.stringify(res));
         return res;
     } catch (error) {
         console.log(error);
@@ -88,9 +103,23 @@ async function getApi() {
 }
 function printProjects (projects) {
     const list = document.querySelectorAll('.splide__slide');
+    const path = location.href.split('/').at (-1).at(0);
     projects.forEach((project, i) => {
-        const { descripcion, image, tecnologias, titulo, technologies, title} = project;
-        const html = `
+        const { descripcion, image, tecnologias, titulo, description, technologies, title} = project;
+        let html =' ';
+        if (path==='e'){
+            html = `
+                <div>
+                    <h3>${title}</h3>
+                    <p>${description}</p>
+                    <p>${technologies}</p>
+                </div>
+                <figure>
+                    <img src="${image}" alt="slider item">
+                </figure>
+            `;
+        } else {
+        html = `
             <div>
                 <h3>${titulo}</h3>
                 <p>${descripcion}</p>
@@ -99,14 +128,20 @@ function printProjects (projects) {
                 <figure>
                     <img src="${image}" alt="slider item">
                 </figure>
-        `;
+            `;
+        }
         list[i].innerHTML = html;
     });
 }
 function slider () {
     const splide = new Splide( '.splide',{
         type   : 'loop',
-        perPage: 1,
+        breakpoints: {
+            849: {
+                direction: 'ttb',
+                height: '65vh',
+            }
+        }
       } );
     splide.mount();
 }
@@ -116,6 +151,7 @@ async function main () {
     mode();
     sound();
     printProjects (projects)
+    social()
     slider();
 }
 main();
