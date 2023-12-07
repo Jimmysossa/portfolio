@@ -133,7 +133,7 @@ button {
     width: 80%;
 }
 .splide__slide div figure{
-    border-radius: 40px;
+    border-radius: 80px;
     overflow: hidden;
     display:flex;
     justify-content: center;
@@ -152,7 +152,7 @@ button {
     bottom: 0;
     right: 0;
     z-index: 30;
-    height: 20px;
+    height: 80px;
 }
 .footer .icon {
     font-size: 35px;
