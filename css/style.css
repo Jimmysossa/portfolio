@@ -200,7 +200,7 @@ button {
     a:hover {
         transform: scale(1.25);
     }
-    a:hover::after{
+    .header_nav a:hover::after{
         background-color: var(--var--colorhead);
         content: '';
         position: absolute;
@@ -211,10 +211,6 @@ button {
         border: 1px solid;
         padding: 5px 10px;
         border-radius: 5px;
-    }
-    .header_nav a:hover::after{
-        top: 0;
-        left: 40px;
     }
     .dark a:hover::after{
         background-color: var(--var--colorhead);
@@ -261,8 +257,8 @@ button {
         content: 'Activa/Desactiva el modo oscuro';
     }
     .icon_link:hover::after{
-        top: 0;
-        top: 40px;
+        bottom: 45px;
+        right: 0;
         content: 'contactame';
     }
     .icon_git:hover::after{
