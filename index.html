@@ -34,7 +34,7 @@
           </a>
           </div>
           <div class="nav_center">
-          <a class="icon icon_about" href="#1">
+          <a class="icon icon_about menu" href="#1">
             <lord-icon
             src="https://cdn.lordicon.com/mebvgwrs.json"
             trigger="hover"
@@ -42,14 +42,14 @@
             style="width:20px;height:20px">
             </lord-icon>
           </a>
-          <a class="icon icon_skills" href="#2">
+          <a class="icon icon_skills menu" href="#2">
             <lord-icon
               src="https://cdn.lordicon.com/cqjywglg.json"
               trigger="hover"
               style="width:20px;height:20px">
             </lord-icon>           
           </a>
-          <a class="icon icon_projects" href="#3">
+          <a class="icon icon_projects menu" href="#3">
             <lord-icon
               src="https://cdn.lordicon.com/wyjhrzdh.json"
               trigger="hover"
@@ -58,7 +58,7 @@
               style="width:20px;height:20px">
             </lord-icon>           
           </a>
-          <a class="icon icon_educations" href="#4">
+          <a class="icon icon_educations menu" href="#4">
             <lord-icon
               src="https://cdn.lordicon.com/lqbssemm.json"
               trigger="hover"
@@ -66,7 +66,7 @@
               style="width:20px;height:20px">
             </lord-icon>            
           </a>
-          <a class="icon icon_archievements" href="#5">
+          <a class="icon icon_archievements menu" href="#5">
             <lord-icon
               src="https://cdn.lordicon.com/jdngjjzg.json"
               trigger="hover"
@@ -74,7 +74,7 @@
               style="width:20px;height:20px">
             </lord-icon>            
           </a>
-          <a class="icon icon_cv" href="./cv/CVesp.pdf" download="">
+          <a class="icon icon_cv menu" href="./cv/fullstack.pdf" download="">
             <lord-icon
               src="https://cdn.lordicon.com/ujxzdfjx.json"
               trigger="hover"
@@ -84,10 +84,6 @@
           </a>
         </div>
         <div class="nav_end">
-          <a class="icon icon_languaje" href="./english.html">
-            <!-- <img src="./iconos/esp.png" alt=""> -->
-            <img src="./iconos/eng.png" alt="">
-          </a>
           <a class="icon icon_volume">
             <!-- <ion-icon name="volume-high-sharp"></ion-icon> -->
             <ion-icon name="volume-mute-sharp"></ion-icon>
@@ -102,25 +98,25 @@
   </header>
   <main class="main">
     <section class="section front">
-        <h1>Programador frontend</h1>
+        <h1>Programador web FullStack</h1>
         <h2>Jimmy Sossa Diaz</h3>
-        <p>Estudiante del programa de desarrollo web y ciencias de computacion de la academia "Academlo".</p>
+        <p>Egresado del programa de estudio y desarrollo en ciencias de la programacion "Academlo". con 24 años dispuesto a aprender y poner todo mi empeño en aportar a su empresa.</p>
         <figure>
-          <img src="./imagenes/photo.jpg" alt="photo">
+          <img class="perfil" src="./imagenes/photo.jpg" alt="photo">
         </figure>
     </section>
     <section class="section about" id="1">
       <h2>Sobre mi</h2>
-      <p>Nacido y criado en bosconia cesar, capital mundial del chicharron y dueño del cruce principal Colombia.</p>
+      <p>Desarrolle proyectos en HTML, JavaScript, CSS, React, Node.js entre otras tecnologias para mi portafolio mostrando buen desempeño por la estetica y la innovacion.</p>
       <h3>Aficiones</h3>
       <ul>
         <li>Manejar, repara y modificar motos.</li>
         <li>Manejar bicicletas.</li>
         <li>Visitar lugares nuevos.</li>
-        <li>Enriqueser la cultura propia.</li>
+        <li>Enriquecer la cultura propia.</li>
         <li>Cinefilo.</li>
       </ul>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d31832.141448690676!2d-69.93228251260805!3d-4.216807936864391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1701485627231!5m2!1ses-419!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15717.559262718507!2d-73.90070865!3d9.9846228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1713883203931!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
     <section class="section skills" id="2">
           <h2>Habilidades:</h2>
@@ -149,15 +145,24 @@
     </section>
     <section class="section project" id="3">
         <h2>Proyectos:</h2> 
-        <div class="splide">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">Slide 01</li>
-              <li class="splide__slide">Slide 02</li>
-              <li class="splide__slide">Slide 03</li>
-            </ul>
-          </div>
-        </div>
+      <div class="prj">
+       <a class="proyect" href="https://galleta-de-la-fortuna-che7.onrender.com/">
+        <img class="imgprj" src="./imagenes/galleta.png" alt="galleta de la fortuna">
+        <p class="txtprj">Proyecto de alietoriedad en JavaScript galleta de la fortuna</p>
+       </a>
+       <a class="proyect" href="https://weather-app-kcfo.onrender.com/">
+        <img class="imgprj" src="./imagenes/clima.png" alt="aplicacion del clima">
+        <p class="txtprj">Proyecto para saber el clima en tu ciudad</p>
+       </a>
+       <a class="proyect" href="https://pokedex-4ic2.onrender.com/">
+        <img class="imgprj" src="./imagenes/poke.png" alt="pokedex">
+        <p class="txtprj">Aplicacion consumiendo una api para iniciar una pokedex</p>
+       </a>
+       <a class="proyect" href="https://wikirickandmorty.onrender.com/">
+        <img class="imgprj" src="./imagenes/rick.png" alt="wiki rick y morty">
+        <p class="txtprj">Diseño con frontend consumiendo una api para hacer una wiki sobre Rick y Morty</p>
+       </a>
+      </div>
     </section>
     <section class="section education" id="4">   
             <h2>Educación:</h2>
@@ -181,14 +186,14 @@
       <figure>
         <img src="./imagenes/aplausos.gif" alt="animated gif">
       </figure>
-      <p>Como estudiante de academlo me destaco como buen operador al momento de entregar los ejercicios dados como proyectos.</p>
+      <p>Como estudiante de academlo me destaco como buen operador al momento de entregar los ejercicios dados como proyectos entregandolos a tiempo y cumpliendo con los requisitos establecidos. Mi labor desempeñado en su empresa sera aportar mis conocimientos y virtudes para alcanzar el objetivo deseado, espero contar con su aprovacion o al menos una retroalimentacion.</p>
     </section>
   </main>
   <footer class="footer active">
-    <a class="icon icon_link" href="#">
+    <a class="icon icon_link" href="https://www.linkedin.com/in/jimmy-sossa/">
       <ion-icon name="logo-linkedin"></ion-icon>
     </a>
-    <a class="icon icon_git" href="#">
+    <a class="icon icon_git" href="https://github.com/Jimmysossa?tab=repositories">
       <ion-icon name="logo-github"></ion-icon>
     </a>
   </footer>

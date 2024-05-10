@@ -46,6 +46,11 @@ button {
     top: 0;
 
 }
+.perfil{ 
+    height: auto;
+    width: 220px;
+    border-radius: 7%;
+}
 .header_nav {
     height: 50px;
     width: 100%;
@@ -77,6 +82,26 @@ button {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.prj {
+    width: 100% ;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(15rem , 1fr));
+    grid-template-rows: auto;
+}
+.proyect{
+    background-color: rgba(94, 184, 184, 0.068);
+    border-radius: 8px;
+    height: full;
+    width: fit-content;
+}
+.imgprj {
+    height: fit-content;
+}
+.txtprj{
+    font-size: 20px;
+    padding: 16px;
 }
 .front > * {
     text-align: center;
@@ -187,10 +212,7 @@ button {
     }
 }
 @media (min-width: 850px) {
-    a {
-        font-size: 30px;
-        width: 30px;
-    }
+
     h2{
         font-size: 40px;
     }
@@ -198,9 +220,9 @@ button {
         font-size: 30px;
     }
     a:hover {
-        transform: scale(1.25);
+        transform: scale(1.09);
     }
-    a:hover::after{
+    .menu:hover::after{
         background-color: var(--var--colorhead);
         content: '';
         position: absolute;
@@ -341,9 +363,11 @@ button {
         grid-row: 1 / span 2;
     }
     .project {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 5fr;
+        grid-template-columns: repeat(2,1 fr);
+        grid-template-rows: repeat(2,1fr);
+        align-items: center;
     }
+
     .splide__slide {
         display: flex;
         flex-direction: row;
